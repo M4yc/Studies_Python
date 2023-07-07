@@ -4,4 +4,4 @@ n = int(input("Insira um numero inteiro maior que zero: "))
 if n % 2 == 0:
     print("O número %d é par." % n)
 else:
-    print("O número %d é impar." % n)
+    print(f"O número {n} é impar.")
