@@ -5,10 +5,10 @@ dimensao = 10
 
 matriz = np.random.randint(1, 11, (dimensao, dimensao))
 somaLin = np.empty(dimensao, dtype=int)
-for i in range( 0, dimensao ):
-    somaLin[i] = 0
-    for j in range( 0, dimensao ):
-        somaLin[i] = somaLin[i] + matriz[j][i]
+for j in range( 0, dimensao ):
+    somaLin[j] = 0
+    for i in range( 0, dimensao ):
+        somaLin[j] = somaLin[j] + matriz[j][i]
 
 print(matriz)
 print('---------------')

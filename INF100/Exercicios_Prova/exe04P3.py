@@ -3,11 +3,11 @@ def calculaIMC(altura,peso):
 def classificaIMC(imc):
     if imc < 18.6:
         return "Magreza"
-    if imc >= 18.6 and imc < 24.9:
+    elif imc >= 18.6 and imc < 24.9:
         return "Normal"
-    if imc >= 25 and imc < 29.9:
+    elif imc >= 25 and imc < 29.9:
         return "Sobrepeso"
-    if imc > 29.9:
+    elif imc > 29.9:
         return "Obesidade"
 
 ######## Programa Principal ############
