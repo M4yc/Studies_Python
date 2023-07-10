@@ -1,16 +1,16 @@
-# Nome do aluno:
-# Matrícula:
-# Data:
-# Substitua esta linha pelo comentário dizendo o que o programa faz
+# Nome do aluno: Maycon Vinicius Batista Araujo
+# Matrícula: 113683
+# Data: 10/07/2023
+# Programa que faz o quadrante ficar preto e branco
 
 # importa a biblioteca de imagens
 import imagens
 import auxiliar2 as aux
 ##############################################################################
 # ESCREVA abaixo desta linha o código para implementar a função processaImagem
-
-
-
+def processaImagem(im,lin,col,di,dj,quadrante):
+    if quadrante == 1:
+        print('Quadrante 1')
 
 
 def main():
