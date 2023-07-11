@@ -19,7 +19,7 @@ def processaImagem(im,lin,col,dx,dy,quadrante):
 
     while True :
         es = int(input("Sua escolha:"))
-        if es == 1 or es == 2 or es == 3 or es == 4 or es == 5:
+        if es == 1 or es == 2 or es == 3 or es == 4 or es == 5 or es==6:
             break
         print("Opção não existente, escolha outra.")
     if es == 1:#Preto e branco
@@ -54,6 +54,16 @@ def processaImagem(im,lin,col,dx,dy,quadrante):
                 g = 255 - g
                 b = 255 - b
                 im[i+dx][j+dy] = (r, g, b)
+    elif es == 6:#Correção
+        for i in range(0, lin):
+            for j in range(0, col):
+                if im[i][j] ==(107,102,110):
+                    r, g, b = im[i - 1][j]
+                    rb, gb, bb = im[i + 1][j]
+                    rm = (r + rb) // 2
+                    gm = (g + gb) // 2
+                    bm = (b + bb) // 2
+                    im[i][j] = (rm, gm, bm)
 
 def main():
     # im = arranjo bidimensional com os pixels da imagem
