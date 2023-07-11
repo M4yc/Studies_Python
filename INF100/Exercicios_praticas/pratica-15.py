@@ -1,7 +1,7 @@
-# Nome do aluno: Maycon Vinicius Batista Araujo
-# Matrícula: 113683
-# Data: 10/07/2023
-# Programa que faz o quadrante ficar preto e branco
+# Nome do aluno:Maycon Vinicius Batista Araujo
+# Matrícula:113683
+# Data:04/07/2023
+# Um programa que faz o quadrante ficar preto e branco
 
 # importa a biblioteca de imagens
 import imagens
@@ -9,50 +9,33 @@ import auxiliar2 as aux
 ##############################################################################
 # ESCREVA abaixo desta linha o código para implementar a função processaImagem
 def processaImagem(im,lin,col,dx,dy,quadrante):
-
     if quadrante == 1:
-        inicl = 0
-        fiml = lin//2
-        inicc = 0
-        fimc = col//2
-    if quadrante == 2:
-        inicl = 0
-        fiml = lin//2
-        inicc = col//2
-        fimc = col
-    if quadrante == 3:
-        inicl = lin//2
-        fiml = lin
-        inicc = 0
-        fimc = col//2
-    if quadrante == 4:
-        inicl = lin//2
-        fiml = lin
-        inicc = col//2
-        fimc = col
-
-    if quadrante == 1:
-        for i in range(dx, lin//2):
-            for j in range(dy, col//2):
-                r, g, b = im[i][j]
-                m = (r+g+b)//3
-                im[i][j] = (m, m, m)
-    if quadrante == 2:
         for i in range(dx,lin//2):
-            for j in range(dy,col):
+            for j in range(dy,col//2):
                 r,g,b = im[i][j]
                 m = (r+g+b)//3
                 im[i][j]=(m,m,m)
-    print(dx)
-    print(dy)
-    """for i in range(inicl,fiml):
-        for j in range(inicc,fimc):
-            r,g,b = im[i][j]
-            m = r+g+b//3
-            x = r
-            r = b
-            b = x
-            im[i][j] = (r,g,b)"""
+                
+    if quadrante == 2:
+        for i in range(0,lin//2):
+            for j in range(col//2,col-1):
+                r,g,b = im[i][j]
+                m = (r+g+b)//3
+                im[i][j]=(m,m,m)
+
+    if quadrante == 3:
+        for i in range(lin//2,lin-1):
+            for j in range(0,col//2):
+                r,g,b = im[i][j]
+                m = (r+g+b)//3
+                im[i][j]=(m,m,m)
+    if quadrante == 4:
+        for i in range(lin//2,lin-1):
+            for j in range(col//2,col-1):
+                r,g,b = im[i][j]
+                m = (r+g+b)//3
+                im[i][j]=(m,m,m)
+                 
 
 def main():
     # im = arranjo bidimensional com os pixels da imagem

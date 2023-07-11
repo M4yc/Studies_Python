@@ -1,7 +1,8 @@
 import imagens
 
 def abreArquivoImagem() :
-    nome = input('Nome do arquivo: ')
+    #nome = input('Nome do arquivo: ')
+    nome = 'cores.png'
     im = imagens.Imagem(nome)
     # descobre o número de linhas da imagem
     linha = im.altura
