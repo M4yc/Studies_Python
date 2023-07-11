@@ -10,14 +10,18 @@ import auxiliar2 as aux
 # ESCREVA abaixo desta linha o código para implementar a função processaImagem
 def processaImagem(im,lin,col,dx,dy,quadrante):
     print("Opções para processamento da imagem.")
-    print("[1] Para Trandormar em tons de cinza.")
+    print("[1] Para Tranformar em tons de cinza.")
     print("[2] Para Trocar o verde por vermelho.")
     print("[3] Para Trocar o azul por verde.")
-    print("[4] Para trocar o vermelho por azul.")
-    es = int(input("Sua escolha:"))
-    while not es == 1 or es == 2 or es == 3 or es == 4:
-        print("Opção não existente, escolha outra.")
+    print("[4] Para Trocar o vermelho por azul.")
+    print("[5] Para Transformar em negativo")
+
+
+    while True :
         es = int(input("Sua escolha:"))
+        if es == 1 or es == 2 or es == 3 or es == 4 or es == 5:
+            break
+        print("Opção não existente, escolha outra.")
     if es == 1:#Preto e branco
         for i in range(0, lin//2):
             for j in range(0, col//2):
@@ -30,17 +34,25 @@ def processaImagem(im,lin,col,dx,dy,quadrante):
                 r, g, b = im[i+dx][j+dy]
                 g, r = r, g
                 im[i+dx][j+dy] = (r, g, b)
-    elif es == 3:#Vermelho por Azul
+    elif es == 3:#Azul por verde
         for i in range(0, lin//2):
             for j in range(0, col//2):
                 r, g, b = im[i+dx][j+dy]
-                r, b = b, r
+                b, g = g, b
                 im[i+dx][j+dy] = (r, g, b)
     elif es == 4:#Vermelho por Azul
         for i in range(0, lin//2):
             for j in range(0, col//2):
                 r, g, b = im[i+dx][j+dy]
                 r, b = b, r
+                im[i+dx][j+dy] = (r, g, b)
+    elif es == 5:#Negativo
+        for i in range(0, lin//2):
+            for j in range(0, col//2):
+                r, g, b = im[i+dx][j+dy]
+                r = 255 - r
+                g = 255 - g
+                b = 255 - b
                 im[i+dx][j+dy] = (r, g, b)
 
 def main():
