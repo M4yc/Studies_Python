@@ -43,8 +43,7 @@ def processaImagem(im,lin,col,dx,dy,quadrante):
                 r,g,b = im[i][j]
                 m = (r+g+b)//3
                 im[i][j]=(m,m,m)
-    print(dx)
-    print(dy)
+    
     """for i in range(inicl,fiml):
         for j in range(inicc,fimc):
             r,g,b = im[i][j]
