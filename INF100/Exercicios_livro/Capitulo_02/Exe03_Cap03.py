@@ -1,4 +1,7 @@
 #algorito para troca de pneu
+print("Algoritmo para troca de pneu.")
+print("[1] para pneu furado.")
+print("[0] para pneu bom.")
 pneu = int(input("O pneu está furado: "))
 if pneu == True:
     print("Precisa trocar de pneu.")
