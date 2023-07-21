@@ -1,6 +1,8 @@
 import pyautogui
 import keyboard
 
+
+
 def mover_e_clicar(x, y):
     pyautogui.moveTo(x, y, duration=0.5)  # Move o cursor para a posição (x, y)
     pyautogui.click()  # Executa o clique esquerdo
