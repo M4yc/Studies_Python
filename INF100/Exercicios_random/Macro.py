@@ -22,7 +22,7 @@ def iniciar_thread():
 # Interface Gráfica
 root = tk.Tk()
 root.title("Executar Macro")
-root.geometry("300x100")
+root.geometry("300x200")
 
 label = tk.Label(root, text="Pressione Ctrl+2 para parar o loop")
 label.pack()
