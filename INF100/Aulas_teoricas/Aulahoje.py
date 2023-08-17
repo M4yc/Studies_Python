@@ -5,6 +5,6 @@ def fatorial (n):
     for i in range(2,n+1):
         fat *= i
     return fat
-n = int(input("Qual numero quer o fatorial: "))
+n = int(input("Qual número quer o fatorial: "))
 
 print(fatorial(n))
