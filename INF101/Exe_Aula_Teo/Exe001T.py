@@ -16,15 +16,18 @@ for i in range(0,n):
     if notas[i] < menor:
         menor = notas[i]
     v += notas[i]
+media = sum(notas) / len(notas)
 
-media = v / n
 menorM = 0
 for i in range(0,n):
     if notas[i] < media:
         menorM += 1
 
-desvio_padrao = (Σ(xi - μ)^2 / N)^0.5
+soma_quadrados_diferencas = sum((x - media) ** 2 for x in notas)
+variancia = soma_quadrados_diferencas / len(notas)
+desvio_padrao = variancia ** 0.5
 
+print("Desvio Padrão:", desvio_padrao)
 print("A media das notas fornecidas foi: %d" % media)
 print("A maior nota foi: %d" % maior)
 print("A menor nota foi: %d" % menor)
