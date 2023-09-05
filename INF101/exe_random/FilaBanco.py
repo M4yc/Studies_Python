@@ -1,14 +1,16 @@
 nome=["João", "Maria", "Pedro", "José", "Antonio", "Ana"]
 fila = [1, 2, 3, 4, 5, 6]
+nomes = [(1,"João"), (1,"Maria"), (1,"Pedro"), (2,"José"), (2,"Antonio"), (2,"Ana")]
+
 #print(f"Fila do banco está com {len(nome)} pessoas na fila.")
 def menu():
-    print('')
+    print('-------------------------------------------------------')
     print(f"Fila do banco está com {len(nome)} pessoas na fila.")
     print("| A | para adicionar um cliente ao fim da fila.")
     print("| C | para começar o atendimento.")
     print("| S | para finalizar.")
     print("| M | para mostrar a fila.")
-    print('')
+    print('-------------------------------------------------------')
 
 cont = 0
 
