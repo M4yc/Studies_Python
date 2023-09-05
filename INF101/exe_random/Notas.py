@@ -11,9 +11,14 @@ def leia_notas(v_min,v_max):
 
         dado = int(input(f"Digite uma nota entre {v_min} e {v_max}: "))
 
-    return dados,cont
+    return dados, cont
+def calc_media(lista):
 
-notas = leia_notas(0,100)
+    return sum(lista)/len(lista)
+
+notas,cont = leia_notas(0,100)
+media = calc_media(notas)
 
 print("\nDados lidos:\n",notas)
-print(f"Dados validos {1}")
+print(f"Dados validos {cont}")
+print(f"Media das notas: {media:.2f}")
