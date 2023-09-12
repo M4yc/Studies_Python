@@ -12,7 +12,6 @@ for i in range(len(l)):
     print(l[i],end=' ')
 
 
-
 print("\n")
 print(f"Maximo: {max(l)}")
 #print(max(l))
