@@ -15,7 +15,6 @@ def mini(l):
     #lista.sort()
     #np.min(lista)
 
-    return np.
 def segundoMenor(l):
     lista = l
     menor = l[0]
