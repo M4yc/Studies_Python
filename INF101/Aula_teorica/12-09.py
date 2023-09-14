@@ -2,7 +2,7 @@ import math
 import numpy
 import random
 
-quadrados = [math.sqrt(x) for x in range(10)]
-
+quadrados = [ x**2 for x in range(10)]
+print("Imprime lista com o quadrado dos números de 0 a 9:")
 for i in quadrados:
-    print(f"Imprime lista com o quadrado dos números de 0 a 9:{i:.2f}")
+    print(f"{i:.0f}",end=', ')

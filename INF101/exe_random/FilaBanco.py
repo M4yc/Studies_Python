@@ -11,9 +11,7 @@ def menu():
     print("| S | para finalizar.")
     print("| M | para mostrar a fila.")
     print('-------------------------------------------------------')
-
 cont = 0
-
 while True:
     menu()
     operacao = str(input("Digite o que deseja fazer:").upper())
