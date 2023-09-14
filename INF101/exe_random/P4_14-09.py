@@ -1,4 +1,5 @@
 import random
+import numpy as np
 def main():
     #l=[22,1,4,2,5,65,7,85,9]
     #l=[36]
@@ -8,6 +9,13 @@ def main():
     print("Lista Original: ",l)
 
     print("Segundo Menor valor da lista: ",segundoMenor(l))
+    print("Lista Ordenada: ",mini(l))
+def mini(l):
+    lista = l
+    #lista.sort()
+    #np.min(lista)
+
+    return np.
 def segundoMenor(l):
     lista = l
     menor = l[0]
@@ -24,4 +32,6 @@ def segundoMenor(l):
         return menor2
     else:
         return None
+
+
 main()
