@@ -1,6 +1,6 @@
 nome=["João", "Maria", "Pedro", "José", "Antonio", "Ana"]
 fila = [1, 2, 3, 4, 5, 6]
-nomes = [(1,"João"), (1,"Maria"), (1,"Pedro"), (2,"José"), (2,"Antonio"), (2,"Ana")]
+nomes = [(1,"João"), (2,"Maria"), (3,"Pedro"), (4,"José"), (5,"Antonio"), (6,"Ana")]
 
 #print(f"Fila do banco está com {len(nome)} pessoas na fila.")
 def menu():
