@@ -4,13 +4,13 @@ nomes = [(1,"João"), (2,"Maria"), (3,"Pedro"), (4,"José"), (5,"Antonio"), (6,"
 
 #print(f"Fila do banco está com {len(nome)} pessoas na fila.")
 def menu():
-    print('-------------------------------------------------------')
+    print('-'*50)
     print(f"Fila do banco está com {len(nome)} pessoas na fila.")
     print("| A | para adicionar um cliente ao fim da fila.")
     print("| C | para começar o atendimento.")
     print("| S | para finalizar.")
     print("| M | para mostrar a fila.")
-    print('-------------------------------------------------------')
+    print("-"*50)
 cont = 0
 while True:
     menu()
