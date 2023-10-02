@@ -12,3 +12,7 @@ def calc(matr):
     return dig
 def matrval(matr):
     return matr[5] == calc(matr)
+
+matricula = "34521-V"
+
+matrval(matricula)
