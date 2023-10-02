@@ -1,13 +1,5 @@
 def calcular_media(lista_de_tuplas):
-    """
-    Calcula a média das notas em uma lista de tuplas (matrícula, nota).
-
-    Args:
-    lista_de_tuplas (list): Uma lista de tuplas no formato (matrícula, nota).
-
-    Returns:
-    float: A média das notas.
-    """
+    
     if not lista_de_tuplas:
         return 0.0
 
