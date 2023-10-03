@@ -44,7 +44,10 @@ def pesqNota(mat_input,notas):
     else:
         print("Matricula não encontrada")
 
-mat_input = input("Sua matricula: ")
+def main():
+    mat_input = input("Iforme a matricula: ")
 
-pesqNota(mat_input, notas)
+    pesqNota(mat_input, notas)
+
+main()
 
