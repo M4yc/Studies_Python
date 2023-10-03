@@ -27,7 +27,6 @@ for matricula, (nome, idade, p1, p2, p3) in notas.items():
 
 def pesqNota(mat_input,notas):
 
-    mat_input= int(mat_input)
     if mat_input in notas:
         nome, idade, p1, p2, p3, notaf = notas[mat_input]
         print(f"Nome: {notas[mat_input][0]}")
@@ -44,10 +43,14 @@ def pesqNota(mat_input,notas):
     else:
         print("Matricula não encontrada")
 
-def main():
-    mat_input = input("Iforme a matricula: ")
+while True:
+    mat_input = int(input("Iforme a matricula: "))
+    if mat_input == 0:
+        break
+    elif mat_input != 0:
+        pesqNota(mat_input, notas)
+        print("\n")
 
-    pesqNota(mat_input, notas)
 
-main()
+
 
