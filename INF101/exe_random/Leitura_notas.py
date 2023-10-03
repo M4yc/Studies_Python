@@ -24,4 +24,26 @@ for matricula, (nome, idade, p1, p2, p3) in notas.items():
     notaf = p1 + p2 + p3
     notas[matricula] = (nome, idade, p1, p2, p3,notaf)
 
-print(f"Nome:{notas[113683][0]} Nota P1= {notas[113683][2]} Nota P2= {notas[113683][3]} Nota P3= {notas[113683][4]} Nota Final= {notas[113683][5]}")
+def pesqNota(mat_input,notas):
+
+    mat_input= int(mat_input)
+    if mat_input in notas:
+        nome, idade, p1, p2, p3, notaf = notas[mat_input]
+        print(f"Nome: {notas[mat_input][0]}")
+        print(f"Nota P1: {p1}")
+        print(f"Nota P2: {p2}")
+        print(f"Nota P3: {p3}")
+        print(f"Nota Final: {notaf}")
+        if notaf < 60:
+            print("Reprovou")
+        elif notaf < 40:
+            print("Reprovado direto")
+        elif notaf > 60:
+            print("Passou")
+    else:
+        print("Matricula não encontrada")
+
+mat_input = input("Sua matricula: ")
+
+pesqNota(mat_input, notas)
+
