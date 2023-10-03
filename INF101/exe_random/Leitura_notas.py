@@ -3,6 +3,8 @@ def abraArq(nomeArq):
 
 notas = {}
 arq = open("notas.txt", 'r')
+arq.readline()
+
 linha =arq.readline().rstrip('\n')
 while linha != '':
     dados = linha.split('; ')
@@ -15,3 +17,5 @@ while linha != '':
     notas[matr]= (nome, idade, p1, p2, p3)
     linha = arq.readline().rstrip('\n')
 arq.close()
+
+print(notas)
