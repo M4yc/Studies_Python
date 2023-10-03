@@ -1,0 +1,5 @@
+Batata;2
+Feijao;5
+Arroz;5
+Açucar;5
+Macarrão;3
