@@ -1,0 +1,4 @@
+Matricula; Nome; idade; P1; P2; P3
+113683; Maycon; 21; 20; 18; 15
+113684; Mariana; 24; 20; 19; 18
+113685; Josue; 17; 22; 15; 14
