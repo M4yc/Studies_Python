@@ -1,16 +1,23 @@
-D = { "Alface" : 0.45,
-      "Batata" : 1.20,
-      "Tomate" : 2.30,
-      "Feijão" : 5.50 }
+notas = {"113683": ("Maycon", 21, "M"),
+         "113684": ("Mariana", 24, "F"),
+         "113685": ("Josue", 15, "M"),
+         "113686": ("Isabella", 17, "F")}
 
-Dici = {"Maycon" : (20, 30,1.15),
-        "Mariana" : (10,15,1.8)}
+#cont = 0
 
-#print(f"Preço do Feijão R${D['Feijão']:.2f}")
-#print(D)
-#D["Cebola"] = 1.35
-#print(D)
-print(Dici["Maycon"][2])
+#for matricula, (nome, idade, sexo) in notas.items():
+    #if idade > 18:
+        #cont += 1
 
-if Dici["Maycon"][1] == 30:
-    print("Certo")
+#print("Maiores de 18:", cont)
+
+notas = ["113685"][1] = 18
+
+def verIdade(notas):
+    cont = 0
+    for matricula, (nome, idade, sexo) in notas.items():
+        if idade > 18:
+            cont += 1
+
+    return cont
+
