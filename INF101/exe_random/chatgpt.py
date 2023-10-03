@@ -5,7 +5,7 @@ notas = {}
 arq = open("notas.txt", 'r')
 arq.readline()
 
-linha =arq.readline().rstrip('\n')
+linha = arq.readline().rstrip('\n')
 while linha != '':
     dados = linha.split('; ')
     matr = int(dados[0])
@@ -14,14 +14,12 @@ while linha != '':
     p1 = float(dados[3])
     p2 = float(dados[4])
     p3 = float(dados[5])
-    notas[matr]= (nome, idade, p1, p2, p3)
+    notas[matr] = (nome, idade, p1, p2, p3)
     linha = arq.readline().rstrip('\n')
 arq.close()
 
-notaf = 0
-
 for matricula, (nome, idade, p1, p2, p3) in notas.items():
     notaf = p1 + p2 + p3
-    notas[matricula] = (nome, idade, p1, p2, p3,notaf)
+    notas[matricula] = (nome, idade, p1, p2, p3, notaf)
 
-print(f"Nome:{notas[113683][0]}")
+print(f"Nome: {notas[113683][0]}")
