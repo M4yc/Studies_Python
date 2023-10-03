@@ -1,3 +1,4 @@
+import os
 def abraArq():
     notas = {}
     arq = open("notas.txt", 'r')
