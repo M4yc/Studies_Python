@@ -18,4 +18,10 @@ while linha != '':
     linha = arq.readline().rstrip('\n')
 arq.close()
 
-print(notas)
+notaf = 0
+
+for matricula, (nome, idade, p1, p2, p3) in notas.items():
+    notaf = p1 + p2 + p3
+    notas[matr] = (nome, idade, p1, p2, p3,notaf)
+
+print(f"Nome:{notas[113683][0]}")
