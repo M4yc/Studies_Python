@@ -24,4 +24,4 @@ for matricula, (nome, idade, p1, p2, p3) in notas.items():
     notaf = p1 + p2 + p3
     notas[matricula] = (nome, idade, p1, p2, p3,notaf)
 
-print(f"Nome:{notas[113683][0]}")
+print(f"Nome:{notas[113683][0]} Nota P1= {notas[113683][2]} Nota P2= {notas[113683][3]} Nota P3= {notas[113683][4]} Nota Final= {notas[113683][5]}")
