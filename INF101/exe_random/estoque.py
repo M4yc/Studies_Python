@@ -5,3 +5,10 @@ estoque = { 'Tomate' : [1000, 2.30],
             'Feijao' : [500, 6.00]}
 
 vendas = [('Tomate', 5), ('Batata', 100), ('Cenoura', 40), ('Couve', 20), ('Feijao', 80)]
+
+for item, (qnt,preco) in estoque.items():
+    for venda_item, venda_qnt in vendas:
+        if item == venda_item:
+            estoque[item][0] -= venda_qnt
+
+print(estoque)
