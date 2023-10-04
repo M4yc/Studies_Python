@@ -11,8 +11,12 @@ for item, (qnt,preco) in estoque.items():
         if item == venda_item:
             estoque[item][0] -= venda_qnt
 
-print("\n***       Estoque do Supermercado       ***"
-          "\nProduto         Quantidade          Preço")
+with open('EstoqueMercado.txt', 'w') as arquivo:
+    arquivo.write("***       Estoque do Supermercado       ***\n")
+    arquivo.write("Produto         Quantidade          Preço\n")
+    for item, (qnt, preco) in estoque.items():
+        arquivo.write(f"{item:12s}       {qnt:4d}             R$ {preco:.2f} \n")
 
-for item, (qnt,preco) in estoque.items():
-    print(f"{item:12s}       {qnt:4d}             R$ {preco:.2f} ")
+#print("\n***       Estoque do Supermercado       ***"
+          #"\nProduto         Quantidade          Preço")
+

@@ -1,0 +1,7 @@
+***       Estoque do Supermercado       ***
+Produto         Quantidade          Preço
+Tomate              995             R$ 2.30 
+Cenoura             460             R$ 1.50 
+Batata             1400             R$ 1.30 
+Couve               280             R$ 1.00 
+Feijao              420             R$ 6.00 
