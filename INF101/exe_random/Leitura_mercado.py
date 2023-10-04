@@ -1,5 +1,5 @@
 def abrirArq1():
-    estoque = {}
+    lista = {}
     with open("mercado.txt", "r") as arq:
         arq.readline()  # Pule a primeira linha do arquivo
 
@@ -8,13 +8,13 @@ def abrirArq1():
             produto = str(dados[0])
             qnt = int(dados[1])
             mod = str(dados[2])
-            estoque[produto] = [qnt, mod]
+            lista[produto] = [qnt, mod]
 
-    return estoque
+    return lista
 
 def abrirArq2():
     precos = {}
-    with open("preco.txt", "r") as arq:
+    with open("precoEstoque.txt", "r") as arq:
         arq.readline()  # Pule a primeira linha do arquivo
 
         for linha in arq:
@@ -34,7 +34,7 @@ extrato = {}
 
 for produto_lista, (qnt_lista, mod_lista) in estoque.items():
     for produto_estoque, (qnt_estoque, mod_estoque, price) in preco.items():
-        extrato[produto_estoque] = (qnt_lista, mod_estoque, price * qnt_lista)
+        extrato[produto_estoque] = (qnt_lista, mod_estoque, (price * qnt_lista))
 
 pd_desj = 'Fosforo'
 try:
