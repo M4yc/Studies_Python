@@ -2,13 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-# Configurar o driver do Selenium (você precisa baixar o driver adequado para o seu navegador)
-driver = webdriver.Chrome(executable_path='/caminho/para/o/chromedriver')  # Substitua pelo caminho correto do chromedriver
+# Iniciar o navegador Opera GX
+driver = webdriver.Opera(executable_path=r'C:\caminho\para\operadriver_win64.exe')  # Substitua pelo caminho correto do operadriver
 
 # URL do site do supermercado
 url = "https://amantino.marketmine.com.br/principal"
 
-# Iniciar o navegador e abrir a página
+# Abrir a página
 driver.get(url)
 
 # Encontrar o campo de pesquisa e inserir "pizza"
