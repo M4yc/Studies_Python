@@ -32,9 +32,9 @@ preco = abrirArq2()
 
 extrato = {}
 
-for produto_estoque, (qnt_estoque, mod_estoque) in estoque.items():
-    for produto_preco, (qnt_preco, mod_preco, price) in preco.items():
-        extrato[produto_preco] = (qnt_estoque, mod_preco, price * qnt_estoque)
+for produto_lista, (qnt_lista, mod_lista) in estoque.items():
+    for produto_estoque, (qnt_estoque, mod_estoque, price) in preco.items():
+        extrato[produto_estoque] = (qnt_lista, mod_estoque, price * qnt_lista)
 
 pd_desj = 'Fosforo'
 try:
