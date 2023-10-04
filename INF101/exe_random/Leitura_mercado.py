@@ -27,18 +27,22 @@ def abrirArq2():
 
     return precos
 
-estoque = abrirArq1()
+lista = abrirArq1()
 preco = abrirArq2()
 
 extrato = {}
 
-for produto_lista, (qnt_lista, mod_lista) in estoque.items():
+for produto_lista, (qnt_lista, mod_lista) in lista.items():
     for produto_estoque, (qnt_estoque, mod_estoque, price) in preco.items():
-        extrato[produto_estoque] = (qnt_lista, mod_estoque, (price * qnt_lista))
+        if produto_lista == produto_estoque:
+            if produto_estoque not in extrato:
+                extrato[produto_estoque] = [0, 0]
+            extrato[produto_estoque][0] += qnt_lista
+            extrato[produto_estoque][1] += qnt_lista * price
 
 pd_desj = 'Fosforo'
 try:
-    qnt, mod, valor = extrato[pd_desj]
+    qnt, valor = extrato[pd_desj]
     print(f'Produto: {pd_desj:12s}     Quantidade: {qnt}     Valor: R$ {valor:.2f}')
 except KeyError:
     print(f'Produto: "{pd_desj}" não encontrado no extrato.')
