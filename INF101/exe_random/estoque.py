@@ -17,6 +17,3 @@ with open('EstoqueMercado.txt', 'w') as arquivo:
     for item, (qnt, preco) in estoque.items():
         arquivo.write(f"{item:12s}       {qnt:4d}             R$ {preco:.2f} \n")
 
-#print("\n***       Estoque do Supermercado       ***"
-          #"\nProduto         Quantidade          Preço")
-

@@ -2,20 +2,20 @@ Fosforo; 1; Un; 3.00
 Papel toalha; 1; Un; 3.00
 Cenoura; 1; Kg; 1.00
 Cebola; 1; Kg; 2.50
-Leite; 1; Un;
-Arroz; 1; Kg
-Açucar; 1; Kg
-Fuba; 1; Kg
-Oleo; 1; Un
-Sal; 1; Kg
-Farinha; 1; Kg
-Polvilho; 1; Kg
-Pipoca; 1; Un
-Ext Tomate; 1; Un
-Ketchup; 1; Un
-Macarrao; 1; Kg
-Leite Condensado; 1; Un
-Creme de leite; 1; Un
-Batata palha; 1; Un
-Pasta de dente; 1; Un
-Sabonete; 1; Un
+Leite; 1; Un; 4.00
+Arroz; 1; Kg; 6.00
+Açucar; 1; Kg; 3.00
+Fuba; 1; Kg; 2.00
+Oleo; 1; Un; 6.00
+Sal; 1; Kg; 2.00
+Farinha; 1; Kg; 3.00
+Polvilho; 1; Kg; 2.00
+Pipoca; 1; Un; 6.00
+Ext Tomate; 1; Un; 4.00
+Ketchup; 1; Un; 16.00
+Macarrao; 1; Kg; 4.00
+Leite Condensado; 1; Un; 6.00
+Creme de leite; 1; Un; 3.00
+Batata palha; 1; Un; 10
+Pasta de dente; 1; Un; 6.00
+Sabonete; 1; Un; 0.89
