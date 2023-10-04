@@ -11,5 +11,8 @@ for item, (qnt,preco) in estoque.items():
         if item == venda_item:
             estoque[item][0] -= venda_qnt
 
+print("\n***       Estoque do Supermercado       ***"
+          "\nProduto         Quantidade          Preço")
+
 for item, (qnt,preco) in estoque.items():
-    print(f"Produto: {item}      Quantidade: {qnt}      Preço: R$ {preco:.2f} ")
+    print(f"{item:12s}       {qnt:4d}             R$ {preco:.2f} ")
