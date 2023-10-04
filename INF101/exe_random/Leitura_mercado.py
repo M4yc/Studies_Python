@@ -36,7 +36,7 @@ for produto_estoque, (qnt_estoque, mod_estoque) in estoque.items():
     for produto_preco, (qnt_preco, mod_preco, price) in preco.items():
         extrato[produto_preco] = (qnt_estoque, mod_preco, price * qnt_estoque)
 
-pd_desj = 'Farinha'
+pd_desj = 'Fosforo'
 try:
     qnt, mod, valor = extrato[pd_desj]
     print(f'Produto: {pd_desj:12s}     Quantidade: {qnt}     Valor: R$ {valor:.2f}')
