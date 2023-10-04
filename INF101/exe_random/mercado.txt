@@ -1,5 +1,6 @@
-Batata;2
-Feijao;5
-Arroz;5
-Açucar;5
-Macarrão;3
+Fosforo; 1; Un
+Papel toalha; 1; Un
+Cenoura; 4; Kg
+Cebola; 1; Kg
+Leite; 4; Un
+Arroz; 5; Kg
