@@ -1,7 +1,5 @@
 import sys
-#
-#.......................................................................
-#
+
 def main():
     if len(sys.argv) != 4:
         print('***ERRO: Este programa deve ser executado com três argumentos:\n'
@@ -12,9 +10,7 @@ def main():
     print('               ***Alunos Reprovados na Disciplina %s***' %
           (sys.argv[1]))
     verifiqueReprovados(bd)
-#
-#.......................................................................
-#
+
 def leiaAlunos(nomearq):
     #Abre o arquivo
     arq = open(nomearq, 'r')
@@ -33,9 +29,7 @@ def leiaAlunos(nomearq):
     #Fecha o arquivo
     arq.close()
     return bd
-#
-#.......................................................................
-#
+
 def verifiqueReprovados(bd):
     print('\nMatrícula          Nome                  Curso'
           '                 Nota  Faltas')
@@ -44,7 +38,5 @@ def verifiqueReprovados(bd):
         if bd[i][3] < 60 or bd[i][4] > (0.25*int(sys.argv[2])):
             print('%7s   %-25s   %-22s    %2d    %3d' %
                   (bd[i][0], bd[i][1], bd[i][2], bd[i][3], bd[i][4]))
-#
-#.......................................................................
-#
+
 main()
