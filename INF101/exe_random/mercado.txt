@@ -4,3 +4,8 @@ Cenoura; 4; Kg
 Cebola; 1; Kg
 Leite; 4; Un
 Arroz; 5; Kg
+Açucar; 5; Kg
+Fuba; 1; Kg
+Oleo; 1; Un
+Sal; 1; Kg
+Farinha; 3; Kg
