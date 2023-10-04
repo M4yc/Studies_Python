@@ -2,7 +2,7 @@ Fosforo; 1; Un; 3.00
 Papel toalha; 1; Un; 3.00
 Cenoura; 1; Kg; 1.00
 Cebola; 1; Kg; 2.50
-Leite; 1; Un; 
+Leite; 1; Un;
 Arroz; 1; Kg
 Açucar; 1; Kg
 Fuba; 1; Kg
