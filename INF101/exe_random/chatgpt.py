@@ -1,41 +1,32 @@
-from docx import Document
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
 
-estoque = { 'Tomate' : [1000, 2.30],
-            'Cenoura' : [500, 1.50],
-            'Batata': [1500, 1.30],
-            'Couve' : [300, 1.00],
-            'Feijao' : [500, 6.00]}
+# Configurar o driver do Selenium (você precisa baixar o driver adequado para o seu navegador)
+driver = webdriver.Chrome(executable_path='/caminho/para/o/chromedriver')  # Substitua pelo caminho correto do chromedriver
 
-vendas = [('Tomate', 5), ('Batata', 100), ('Cenoura', 40), ('Couve', 20), ('Feijao', 80)]
+# URL do site do supermercado
+url = "https://amantino.marketmine.com.br/principal"
 
-for item, (qnt,preco) in estoque.items():
-    for venda_item, venda_qnt in vendas:
-        if item == venda_item:
-            estoque[item][0] -= venda_qnt
+# Iniciar o navegador e abrir a página
+driver.get(url)
 
-# Cria um documento Word
-doc = Document()
+# Encontrar o campo de pesquisa e inserir "pizza"
+search_box = driver.find_element_by_name("q")
+search_box.send_keys("pizza")
+search_box.send_keys(Keys.RETURN)
 
-# Adiciona um título
-doc.add_heading('Estoque do Supermercado', 0)
+# Aguardar um momento para que a página carregue os resultados
+time.sleep(5)
 
-# Adiciona uma tabela com cabeçalho
-table = doc.add_table(rows=1, cols=3)
-table.autofit = True
-table.style = 'Table Grid'
+# Encontrar e extrair informações sobre os produtos
+product_elements = driver.find_elements_by_class_name("product")
 
-table.rows[0].cells[0].text = 'Produto'
-table.rows[0].cells[1].text = 'Quantidade'
-table.rows[0].cells[2].text = 'Preço'
+for product in product_elements:
+    product_name = product.find_element_by_class_name("product-name").text
+    product_price = product.find_element_by_class_name("product-price").text
+    print(f"Produto: {product_name}")
+    print(f"Preço: {product_price}")
 
-# Adiciona dados à tabela
-for item, (qnt, preco) in estoque.items():
-    row = table.add_row().cells
-    row[0].text = item
-    row[1].text = str(qnt)
-    row[2].text = f'R$ {preco:.2f}'
-
-# Salva o documento como um arquivo Word
-doc.save('estoque.docx')
-
-print("Dados do estoque exportados com sucesso para 'estoque.docx'.")
+# Fechar o navegador
+driver.quit()
