@@ -41,8 +41,9 @@ for produto_lista, (qnt_lista, mod_lista) in lista.items():
             extrato[produto_estoque][1] += qnt_lista * price
 
 pd_desj = 'Fosforo'
-try:
+
+if pd_desj in extrato:
     qnt, valor = extrato[pd_desj]
     print(f'Produto: {pd_desj:12s}     Quantidade: {qnt}     Valor: R$ {valor:.2f}')
-except KeyError:
+else:
     print(f'Produto: "{pd_desj}" não encontrado no extrato.')
