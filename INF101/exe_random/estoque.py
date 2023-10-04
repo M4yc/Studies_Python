@@ -11,5 +11,5 @@ for item, (qnt,preco) in estoque.items():
         if item == venda_item:
             estoque[item][0] -= venda_qnt
 
-at = estoque.keys([0])
-print(f"Produto: {at}      Quantidade: {estoque['Tomate'][0]}      Preço: {estoque['Tomate'][1]} ")
+for item, (qnt,preco) in estoque.items():
+    print(f"Produto: {item}      Quantidade: {qnt}      Preço: R$ {preco:.2f} ")
