@@ -9,3 +9,13 @@ Fuba; 1; Kg
 Oleo; 1; Un
 Sal; 1; Kg
 Farinha; 3; Kg
+Polvilho; 1; Kg
+Pipoca; 1; Un
+Ext Tomate; 3; Un
+Ketchup; 1; Un
+Macarrao; 1; Kg
+Leite Condensado; 3; Un
+Creme de leite; 3; Un
+Batata palha; 2; Un
+Pasta de dente; 2; Un
+Sabonete; 3; Un
