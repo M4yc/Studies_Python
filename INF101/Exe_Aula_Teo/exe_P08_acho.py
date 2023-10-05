@@ -39,4 +39,5 @@ def verifiqueReprovados(bd):
             print('%7s   %-25s   %-22s    %2d    %3d' %
                   (bd[i][0], bd[i][1], bd[i][2], bd[i][3], bd[i][4]))
 
+
 main()
