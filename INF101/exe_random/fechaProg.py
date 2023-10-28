@@ -1,4 +1,5 @@
 import psutil
+#importção da biblioteca
 
 # Lista de nomes de processos que você deseja encerrar
 jogar_valorant = ["Discord.exe", "MouseWithoutBorders.exe", "hid.exe", "msedge.exe", "avpui.exe", "GoogleDriveFS.exe", "figma_agent.exe", "EpicGamesLauncher.exe"]
