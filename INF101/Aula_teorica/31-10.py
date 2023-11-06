@@ -8,6 +8,7 @@ for x in range(120):
 print(tv.canal)
 for x in range(120):
     tv.mudaCanalParaBaixo()
+    
 print(tv.canal)
 tv.aumentaVolume()
 print(tv.volume)
