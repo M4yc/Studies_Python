@@ -1,4 +1,3 @@
-
 <h1 align="center">Python</h1>
 
 <p align="center">
@@ -7,37 +6,29 @@
 </p>
 
 <p align="center">
-	<a href="#Descrição do Projeto">Descrição do Projeto</a> •
-	<a href="#tecnologias-utilizadas">Tecnologias-utilizadas</a> •
- <a href="#funcionalidades">Funcionalidades</a> •
- <a href="#Documentação">Documentação</a> •
+	<a href="#descrição-do-projeto">Descrição do Projeto</a> •
+	<a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
+	<a href="#funcionalidades">Funcionalidades</a> •
+	<a href="#documentação">Documentação</a>
 </p>
 
-![python](/INF101/IntelliJ%20Snippet.png)
+![python](/INF101/Python_img.png)
 
-<p align="right">
- View: https://amandaailin.github.io/MeuTimer/
-</p>
-	
 ## Descrição do Projeto
-Bem-vindo ao meu repositório de exercícios das disciplinas INF100 e INF101 na UFV. Este espaço foi criado para fornecer aos estudantes uma coleção abrangente de exercícios, práticas e recursos relacionados a essas matérias, com o objetivo de apoiar o aprendizado e aprimorar suas habilidades em ciência da computação e informática.
 
-### Proximos pasos:
+Bem-vindo ao meu repositório de exercícios das disciplinas INF100 e INF101 na UFV. Este espaço foi criado para fornecer aos estudantes uma coleção abrangente de exercícios, práticas e recursos relacionados a essas matérias, com o objetivo de apoiar o aprendizado e aprimorar suas habilidades em programação.
 
-- [ ] Acabar a disciplina
-- [ ] Terminar todos os exercicios propostos
+### Próximos passos:
 
-</br>
-
+- [ ] Concluir a disciplina
+- [ ] Terminar todos os exercícios propostos
 
 ## Objetivos:
-- `Funcionalidade 1`: Fixar o aprendizado.
-- `Funcionalidade 2`: Disponibilazar para outras pessoas.
 
+- `Objetivo 1`: Fixar o aprendizado.
+- `Objetivo 2`: Disponibilizar para outras pessoas.
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
-  <img align="center" alt="M4yc-Python" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-  <img align="center" alt="M4yc-Arduino" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
-</br>
-
+<img align="center" alt="M4yc-Python" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+<img align="center" alt="M4yc-Arduino" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
