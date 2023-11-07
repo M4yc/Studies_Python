@@ -35,3 +35,15 @@ class Conta:
       print("{:10s} {:10.2f}".format(op[0], op[1]))
 
     print("\n Saldo: {:10.2f}\n".format(self.saldo))
+
+class Banco:
+  def __init__(self, nome):
+    self.nome = nome
+    self.contas = []
+
+  def abreConta(self,conta):
+    self.contas.append(conta)
+
+  def listaContas(self):
+    for c in self.contas:
+      c.resumo()
