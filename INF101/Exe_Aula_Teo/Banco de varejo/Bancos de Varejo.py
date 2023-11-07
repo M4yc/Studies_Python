@@ -1,16 +1,13 @@
 from bancos import Cliente, Conta
 
-cliente1 = Cliente("Ana Lopes", "3123-4567")
-cliente2 = Cliente("Rui Castro", "3234-6789")
-
-print(cliente1.nome)
-print(cliente2.nome)
-print(cliente1.telefone)
-
-conta.resumo()
-conta.saque(1000.00)
-conta.resumo()
-conta.saque(50.00)
-conta.resumo()
-conta.deposito(234.56)
-conta.resumo()
+cliente1 = Cliente("João Silva", "3345-7890")
+cliente2 = Cliente("Maria Silva", "3345-7890")
+conta1 = Conta([cliente1], '0001', 1000.00)
+conta2 = Conta([cliente1, cliente2], '0002', 500.00)
+conta1.saque(50.00)
+conta2.deposito(300.00)
+conta1.saque(190.00)
+conta2.deposito(95.26)
+conta2.saque(245.00)
+conta1.extrato()
+conta2.extrato()
