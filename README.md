@@ -8,8 +8,7 @@
 <p align="center">
 	<a href="#descrição-do-projeto">Descrição do Projeto</a> •
 	<a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
-	<a href="#funcionalidades">Funcionalidades</a> •
-	<a href="#documentação">Documentação</a>
+	<a href="#funcionalidades">Objetivos</a>
 </p>
 
 ![python](/INF101/Python_img.png)
