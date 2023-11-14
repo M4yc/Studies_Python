@@ -1,4 +1,5 @@
 from bancos import Cliente, Conta, Banco
+from heranca import ContaEspecial
 
 cliente1 = Cliente("João Silva", "3456-7890")
 cliente2 = Cliente("Maria Silva", "3456-7890")
