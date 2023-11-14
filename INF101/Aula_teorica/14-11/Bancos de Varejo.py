@@ -13,10 +13,10 @@ banco1.abreConta(contaJM)
 banco1.abreConta(contaJ)
 banco1.listaContas()
 
-# print( type(banco1.contas[0].clientes[0].nome) )
+
 print( banco1.contas[0].clientes[0].nome )
 print( banco1.contas[0].clientes[1].nome )
-# print( banco1.contas[0].clientes[2].nome )
+
 print( banco1.contas[1].clientes[0].nome )
 
 contaJJ = Conta([cliente1,cliente3], '00001', 500)
