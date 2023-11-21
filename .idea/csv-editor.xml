@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\INF101\Aula_teorica\21-11\funcionarios.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\INF101\Exe_antigos\P7\funcionarios.csv">
           <value>
             <Attribute>
