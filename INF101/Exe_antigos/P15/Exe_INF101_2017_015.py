@@ -20,7 +20,7 @@ def main():
             linha = arq2.readline().rstrip('\n')
 
     agenda_sin = sinc(agenda1,agenda2)
-    print("%d número(s) de telefone lido(s) na agenda1"%len(agenda1))
+    print("%d número(s) de telefone lido(s) na agenda1" % len(agenda1))
     print("%d número(s) de telefone lido(s) na agenda2" % len(agenda2))
 
     print("Agenda Sincronizada")
