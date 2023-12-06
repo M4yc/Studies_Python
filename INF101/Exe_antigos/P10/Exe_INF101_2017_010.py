@@ -5,8 +5,6 @@
 #.......................................................................
 #
 def main():
-    #Gera um dicionario vazio
-    temperaturas = dict()
     nomearq = input('\nEntre com o nome do arquivo de dados: ')
     arqFunc = open(nomearq,'r')
     #Gera um dicionario vazio
