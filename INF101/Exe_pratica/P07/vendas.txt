@@ -1,0 +1,7 @@
+tomate,15.250
+batata,10.5
+alface,5
+champignon,0.200
+chuchu,2.5
+fubá,15.250
+feijão,5.500
