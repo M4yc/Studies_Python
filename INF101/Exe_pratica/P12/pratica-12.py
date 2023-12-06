@@ -6,21 +6,27 @@ def sinc(a1,a2):
     return a1.union(a2)
 
 def main():
-    with open('agenda1.dat', 'r')as arq1:
-        
-        agenda1 = set()
-        linha = arq1.readline().rstrip('\n')
-        while linha != '':
-            agenda1.add(linha)
-            linha = arq1.readline().rstrip('\n')  
+    try:
+        with open('agenda1.dat', 'r')as arq1:
 
-    with open('agenda2.dat', 'r')as arq2:
-        
-        agenda2 = set()
-        linha = arq2.readline().rstrip('\n')
-        while linha != '':
-            agenda2.add(linha)
+            agenda1 = set()
+            linha = arq1.readline().rstrip('\n')
+            while linha != '':
+                agenda1.add(linha)
+                linha = arq1.readline().rstrip('\n')
+    except OSError:
+        print("Erro ao iniciar o arquivo da agenda 1.")
+
+    try:
+        with open('agenda2.dat', 'r')as arq2:
+
+            agenda2 = set()
             linha = arq2.readline().rstrip('\n')
+            while linha != '':
+                agenda2.add(linha)
+                linha = arq2.readline().rstrip('\n')
+    except OSError:
+        print("Erro ao iniciar o arquivo da agenda 2.")
     print("%d número(s) de telefone lido(s) na agenda1" % len(agenda1))
     print("%d número(s) de telefone lido(s) na agenda2" % len(agenda2))
     
