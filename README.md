@@ -11,7 +11,7 @@
 	<a href="#funcionalidades">Objetivos</a>
 </p>
 
-![python](/INF101/Python_img.png)
+![python](./IMG.png)
 
 ## Descrição do Projeto
 
